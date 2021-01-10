@@ -6,7 +6,7 @@
 }
 
 #main {
-	align-content: left;
+	align-content: center; 
 	text-align: left;
 	align-self: left;
 	width: 100%;
@@ -27,6 +27,12 @@
 	font-size: 10vh;
 	
 }
+
+
+#aspectIconRow {
+	display: none;
+}
+
 #aspectIconTable {
 	display: inline-flex;
 }
@@ -50,12 +56,22 @@
 	background: white;
 }
 
+#decklist {
+	list-style-type: none;
+}
+
 #searchResults > img {
 	max-width: 15%;
 }
 
 
 @media only screen and (orientation: portrait) {
+
+	#searchField {
+		font-size: 5vh;
+		width: 100%;
+	}
+
 	#searchResults > img {
 		max-width: 25%;
 	}
@@ -65,12 +81,25 @@
 	#deck {
 		width: 25%;
 	}
+
+	#aspectIconTable {
+		display: none;
+	}
+	#aspectIconRow {
+		display: inline-block;
+		align-items: center;	
+	}
+
+	.aspectIcons {
+		padding-left: 1vw;
+	}
+
 }
 
-@media only screen and (max-width: 1721px) {
+/* @media only screen and (max-width: 1721px) {
 	#cardsPane {
 		align-content: center;
 		align-items: center;
 		align-self: center;
 	}
-}
+} */

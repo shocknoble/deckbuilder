@@ -1,7 +1,7 @@
 class Card {
 	constructor(data, imagePath) {
 		this.imagePath = imagePath
-		this.id = data.Id
+		this.id = data.Id.toString()
 		this.name = data.Name
 		this.shortName = data.ShortName
 		this.rarity = data.Rarity
@@ -37,6 +37,12 @@ class Card {
 		
 		img.title = `ID: ${this.id}\nName: ${this.name}\nRarity: ${this.rarity}\nAspects: ${this.aspects}\n${this.rules}`
 		img.id = this.id
+		img.draggable=true
+		for( let a = 0; a < this.aspects.length; a++) {
+			img.classList.add(this.aspects[a])
+		}
+		img.classList.add('meets-criteria')
+		
 		return img
 	}
 
