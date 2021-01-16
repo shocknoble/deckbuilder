@@ -47,7 +47,8 @@
 }
 
 #deck {
-	position: absolute;
+	position: fixed;
+	/* position: static; */
 	top: 0;
 	width: 15%;
 	height: 100%;
@@ -58,6 +59,10 @@
 
 #decklist {
 	list-style-type: none;
+}
+
+#searchResults {
+	max-width: 92%;
 }
 
 #searchResults > img {
@@ -79,7 +84,9 @@
 		width: 75%
 	}
 	#deck {
+
 		width: 25%;
+		height: 100%
 	}
 
 	#aspectIconTable {
@@ -103,3 +110,39 @@
 		align-self: center;
 	}
 } */
+
+
+.in-deck {
+	font-family:'Courier New', Courier, monospace;
+	user-select: none;
+	font-size: auto;
+	text-align: center;
+	
+}
+
+
+
+.Order {
+	background-color: goldenrod;
+}
+
+.Wisdom {
+	background-color: aqua;
+}
+
+.Nature {
+	background-color: greenyellow;
+}
+
+.Rage {
+	background-color: crimson
+}
+
+.Dominion {
+	background-color: plum;
+}
+
+.Corruption {
+	background-color: gray;
+	color: white;
+}

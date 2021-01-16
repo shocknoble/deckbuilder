@@ -1,8 +1,9 @@
 class Card {
-	constructor(data, imagePath) {
-		this.imagePath = imagePath
+	constructor(data) {
+		this.imagePath
 		this.id = data.Id.toString()
 		this.name = data.Name
+		this.safeName = this.name.replace(/[\’\’]/g,'')
 		this.shortName = data.ShortName
 		this.rarity = data.Rarity
 		this.image = data.Image
@@ -33,7 +34,8 @@ class Card {
 	createBody() {
 		
 		let img = document.createElement('img')
-		img.src = this.imagePath
+
+		img.src = cardImagesUrl+this.safeName+'.jpg'
 		
 		img.title = `ID: ${this.id}\nName: ${this.name}\nRarity: ${this.rarity}\nAspects: ${this.aspects}\n${this.rules}`
 		img.id = this.id

@@ -275,7 +275,7 @@ var cards =
     "AI": true,
     "DeckSortOrder": 0,
     "Type": "Hero - Order",
-    "Rules": "Skill \"Tireless March\"\n<Level:H><Level:H> - 1: Pay up to <Mana:3>. Ready that many allied creatures and restore their full HP. Move to your Deploy phase.",
+    "Rules": "Skill \"Tireless March\"\n<Level:H><Level:H><Level:H> - 1: Pay up to <Mana:3>. Ready that many allied creatures and restore their full HP. Move to your Deploy phase.",
     "Power": 0,
     "Toughness": 0,
     "Speed": 0,
@@ -996,7 +996,7 @@ var cards =
     "AI": true,
     "DeckSortOrder": 13,
     "Type": "Instant Spell - Action",
-    "Rules": "Gain 2 life plus 1 extra life for each of your Order levels.\r\nDraw a card.",
+    "Rules": "If you have 20 or less life, gain 2 life for each of your Order levels.\r\nDraw a card.",
     "Power": 0,
     "Toughness": 0,
     "Speed": 0,
@@ -2742,15 +2742,16 @@ var cards =
     "Mana": 2,
     "IsPrimaryShrine": false,
     "IsLegendary": false,
-    "AI": true,
+    "AI": false,
     "DeckSortOrder": 79,
     "Type": "Spell - Action",
-    "Rules": "Search your deck for a shrine card. Gain a level in that card's aspect and put it in your graveyard. Shuffle your deck.",
+    "Rules": "You gain a level in the aspect of your choice. The enemy hero gains a Spark of Initiative.",
     "Power": 0,
     "Toughness": 0,
     "Speed": 0,
     "MaxInDeck": 4,
     "ReferencedCards": [
+      333,
       43,
       296,
       226,
@@ -3763,6 +3764,39 @@ var cards =
     "ReferencedCards": []
   },
 {
+    "Id": 728,
+    "Name": "Chromax, Mages Familiar",
+    "ShortName": "Chromax",
+    "Image": "Cromax",
+    "Edition": "Exp1",
+    "Rarity": "Epic",
+    "AddOn": "None",
+    "LevelRequired": "WW",
+    "Types": [
+      "Creature"
+    ],
+    "Tags": [
+      "Dragon"
+    ],
+    "Aspects": [
+      "Wisdom"
+    ],
+    "Mana": 3,
+    "IsPrimaryShrine": false,
+    "IsLegendary": true,
+    "AI": true,
+    "DeckSortOrder": 91,
+    "Type": "Legendary Creature - Dragon",
+    "Rules": "Flying\nWhen ~ enters the field, you may put an Action spell from your graveyard under ~.\nWhen you play a card with the same name as a card under ~, ~ takes its final form.",
+    "Power": 1,
+    "Toughness": 3,
+    "Speed": 3,
+    "MaxInDeck": 4,
+    "ReferencedCards": [
+      729
+    ]
+  },
+{
     "Id": 159,
     "Name": "Lamp of Zaffir",
     "ShortName": "Lamp of Zaffir",
@@ -4442,7 +4476,7 @@ var cards =
     "AI": false,
     "DeckSortOrder": 132,
     "Type": "Hero - Nature",
-    "Rules": "Skill \"Native Terrain\"\n<Level:N> - 1: All creatures you play this turn are Swift until end of turn.",
+    "Rules": "Skill \"Native Terrain\"\n<Level:N> - 1: A creature you played this turn and up to two other creatures played this turn that have a common creature type with it are Swift until end of turn.",
     "Power": 0,
     "Toughness": 0,
     "Speed": 0,
@@ -5273,6 +5307,7 @@ var cards =
       545,
       698,
       154,
+      765,
       706,
       4,
       367,
@@ -6104,6 +6139,52 @@ var cards =
     "ReferencedCards": []
   },
 {
+    "Id": 754,
+    "Name": "Feya of the Rainbow",
+    "ShortName": "Feya of the Rainbow",
+    "Image": "Feya",
+    "Edition": "Exp1",
+    "Rarity": "Epic",
+    "AddOn": "None",
+    "LevelRequired": "2N",
+    "Types": [
+      "Creature"
+    ],
+    "Tags": [
+      "Faerie",
+      "Mage"
+    ],
+    "Aspects": [
+      "Nature"
+    ],
+    "Mana": 2,
+    "IsPrimaryShrine": false,
+    "IsLegendary": true,
+    "AI": true,
+    "DeckSortOrder": 167,
+    "Type": "Legendary Creature - Faerie Mage",
+    "Rules": "Flying\nWhen you play ~ or another Faerie as your first creature for the turn, choose an aspect. Replace one level of that aspect on creatures you play with <Level:1> until end of turn.",
+    "Power": 2,
+    "Toughness": 3,
+    "Speed": 2,
+    "MaxInDeck": 4,
+    "ReferencedCards": [
+      43,
+      296,
+      226,
+      74,
+      68,
+      53,
+      559,
+      526,
+      525,
+      529,
+      528,
+      527,
+      524
+    ]
+  },
+{
     "Id": 92,
     "Name": "Fae of Charm",
     "ShortName": "Fae of Charm",
@@ -6438,7 +6519,7 @@ var cards =
     "AI": false,
     "DeckSortOrder": 198,
     "Type": "Hero - Rage",
-    "Rules": "Skill \"Firestorm\"\n<Level:C><Level:C><Level:1> - 5: Deal 3 damage to all creatures.",
+    "Rules": "Skill \"Firestorm\"\n<Level:C><Level:C><Level:1> - 6: Deal 3 damage to all creatures.",
     "Power": 0,
     "Toughness": 0,
     "Speed": 0,
@@ -7608,37 +7689,6 @@ var cards =
     "ReferencedCards": []
   },
 {
-    "Id": 406,
-    "Name": "Cannonade",
-    "ShortName": "Cannonade",
-    "Image": "Cannonade",
-    "Edition": "Core",
-    "Rarity": "Uncommon",
-    "AddOn": "ValiantDawn",
-    "LevelRequired": "1C",
-    "Types": [
-      "Spell"
-    ],
-    "Tags": [
-      "Action"
-    ],
-    "Aspects": [
-      "Rage"
-    ],
-    "Mana": 3,
-    "IsPrimaryShrine": false,
-    "IsLegendary": false,
-    "AI": true,
-    "DeckSortOrder": 223,
-    "Type": "Spell - Action",
-    "Rules": "Put a Target Emblem on an enemy creature. The enemy hero distributes 4 damage among creatures he or she controls. Each creature with a Target Emblem is dealt double the damage that was assigned to it.",
-    "Power": 0,
-    "Toughness": 0,
-    "Speed": 0,
-    "MaxInDeck": 4,
-    "ReferencedCards": []
-  },
-{
     "Id": 99,
     "Name": "Fireblast",
     "ShortName": "Fireblast",
@@ -7756,7 +7806,7 @@ var cards =
     "AI": false,
     "DeckSortOrder": 223,
     "Type": "Creature - Goblin",
-    "Rules": "Tainted\nWhen you lose life or are dealt damage for the first time each turn, +<Energy:2>.\n1: Play a non-Spirit creature with level 2 or less from your graveyard using ~' energy to pay that card's mana cost. Use this power only during your turn.",
+    "Rules": "Tainted\nWhen you lose life or are dealt damage for the first time each turn, +<Energy:2>.\n1: Play a non-Spirit creature with ATK 2 or less from your graveyard using ~' energy to pay that card's mana cost. Use this power only during your turn.",
     "Power": 3,
     "Toughness": 3,
     "Speed": 2,
@@ -7824,6 +7874,37 @@ var cards =
     "Power": 3,
     "Toughness": 2,
     "Speed": 3,
+    "MaxInDeck": 4,
+    "ReferencedCards": []
+  },
+{
+    "Id": 406,
+    "Name": "Cannonade",
+    "ShortName": "Cannonade",
+    "Image": "Cannonade",
+    "Edition": "Core",
+    "Rarity": "Uncommon",
+    "AddOn": "ValiantDawn",
+    "LevelRequired": "1C",
+    "Types": [
+      "Spell"
+    ],
+    "Tags": [
+      "Action"
+    ],
+    "Aspects": [
+      "Rage"
+    ],
+    "Mana": 4,
+    "IsPrimaryShrine": false,
+    "IsLegendary": false,
+    "AI": true,
+    "DeckSortOrder": 224,
+    "Type": "Spell - Action",
+    "Rules": "Put a Target Emblem on an enemy creature. The enemy hero distributes 4 damage among creatures he or she controls. Each creature with a Target Emblem is dealt double the damage that was assigned to it.",
+    "Power": 0,
+    "Toughness": 0,
+    "Speed": 0,
     "MaxInDeck": 4,
     "ReferencedCards": []
   },
@@ -8513,9 +8594,9 @@ var cards =
     "AI": true,
     "DeckSortOrder": 277,
     "Type": "Creature - Spirit",
-    "Rules": "Primary\nPlay boost - Gain an empty mana crystal if you pay <Mana:1>.",
+    "Rules": "Primary\nWhenever you gain a mana crystal, you may pay <Mana:1> to put a Might Emblem on ~.",
     "Power": 2,
-    "Toughness": 1,
+    "Toughness": 2,
     "Speed": 2,
     "MaxInDeck": 60,
     "ReferencedCards": []
@@ -9134,7 +9215,7 @@ var cards =
     ],
     "Tags": [
       "Elf",
-      "Mercenary"
+      "Assassin"
     ],
     "Aspects": [
       "Dominion"
@@ -9144,7 +9225,7 @@ var cards =
     "IsLegendary": false,
     "AI": true,
     "DeckSortOrder": 278,
-    "Type": "Creature - Elf Mercenary",
+    "Type": "Creature - Elf Assassin",
     "Rules": "Ranged\nAt the end of combat, if ~ attacked or blocked this turn, return it to its owner's hand unless you pay <Mana:1>.",
     "Power": 3,
     "Toughness": 2,
@@ -9320,7 +9401,7 @@ var cards =
     ],
     "Tags": [
       "Human",
-      "Soldier"
+      "Mercenary"
     ],
     "Aspects": [
       "Dominion"
@@ -9330,7 +9411,7 @@ var cards =
     "IsLegendary": false,
     "AI": true,
     "DeckSortOrder": 287,
-    "Type": "Creature - Human Soldier",
+    "Type": "Creature - Human Mercenary",
     "Rules": "When you sacrifice ~, draw a card.",
     "Power": 2,
     "Toughness": 2,
@@ -9963,6 +10044,42 @@ var cards =
     "ReferencedCards": []
   },
 {
+    "Id": 755,
+    "Name": "Azoreth, Lord of Tyrants",
+    "ShortName": "Azoreth",
+    "Image": "Azoreth",
+    "Edition": "Exp1",
+    "Rarity": "Heroic",
+    "AddOn": "None",
+    "LevelRequired": "1AA",
+    "Types": [
+      "Creature"
+    ],
+    "Tags": [
+      "Dragon",
+      "Mage"
+    ],
+    "Aspects": [
+      "Dominion"
+    ],
+    "Mana": 3,
+    "IsPrimaryShrine": false,
+    "IsLegendary": true,
+    "AI": true,
+    "DeckSortOrder": 300,
+    "Type": "Legendary Creature - Dragon Mage",
+    "Rules": "Flying\n~ has +1 ATK/+1 HP for each other non-Summoned Dominion creature you control.\nWhen ~ enters the field, you may play a copy of an Assassinate, a Mind Extortion, or a Hypnotizing Whispers spell.",
+    "Power": 2,
+    "Toughness": 2,
+    "Speed": 2,
+    "MaxInDeck": 4,
+    "ReferencedCards": [
+      11,
+      146,
+      184
+    ]
+  },
+{
     "Id": 71,
     "Name": "Dreyla, Ruthless Oppressor",
     "ShortName": "Dreyla",
@@ -9992,6 +10109,40 @@ var cards =
     "Speed": 2,
     "MaxInDeck": 4,
     "ReferencedCards": []
+  },
+{
+    "Id": 732,
+    "Name": "Vampire Bats",
+    "ShortName": "Vampire Bats",
+    "Image": "VampireBats",
+    "Edition": "Exp1",
+    "Rarity": "Epic",
+    "AddOn": "None",
+    "LevelRequired": "1AA",
+    "Types": [
+      "Creature"
+    ],
+    "Tags": [
+      "Vampire"
+    ],
+    "Aspects": [
+      "Dominion"
+    ],
+    "Mana": 4,
+    "IsPrimaryShrine": false,
+    "IsLegendary": false,
+    "AI": true,
+    "DeckSortOrder": 301,
+    "Type": "Creature - Vampire",
+    "Rules": "Flying\nIf ~ wasn't summoned, it enters the field with 3 extra summoned copies of itself.\nWhen you control a single copy of ~, it takes its final form.",
+    "Power": 1,
+    "Toughness": 1,
+    "Speed": 2,
+    "MaxInDeck": 4,
+    "ReferencedCards": [
+      732,
+      733
+    ]
   },
 {
     "Id": 271,
@@ -12185,6 +12336,40 @@ var cards =
     ]
   },
 {
+    "Id": 768,
+    "Name": "Cloud Sanctuary",
+    "ShortName": "Cloud Sanctuary",
+    "Image": "OrderWisdom",
+    "Edition": "Exp1",
+    "Rarity": "Rare",
+    "AddOn": "None",
+    "LevelRequired": null,
+    "Types": [
+      "Shrine",
+      "Resource"
+    ],
+    "Tags": [
+      "Order",
+      "Wisdom"
+    ],
+    "Aspects": [
+      "Order",
+      "Wisdom"
+    ],
+    "Mana": 0,
+    "IsPrimaryShrine": false,
+    "IsLegendary": false,
+    "AI": false,
+    "DeckSortOrder": 2706,
+    "Type": "Shrine Resource - Order Wisdom",
+    "Rules": "Sacrifice ~: Choose one –\r\n• Convert <Level:H> into <Level:W>.\n• {ButtonText}\n• <Level:HW> - {ButtonText}",
+    "Power": 0,
+    "Toughness": 0,
+    "Speed": 0,
+    "MaxInDeck": 4,
+    "ReferencedCards": []
+  },
+{
     "Id": 662,
     "Name": "Guardian Owl",
     "ShortName": "Guardian Owl",
@@ -12315,6 +12500,39 @@ var cards =
     "ReferencedCards": []
   },
 {
+    "Id": 756,
+    "Name": "Stamatis, Shieldmaster",
+    "ShortName": "Stamatis",
+    "Image": "Stamatis",
+    "Edition": "Exp1",
+    "Rarity": "Epic",
+    "AddOn": "None",
+    "LevelRequired": "1HW",
+    "Types": [
+      "Creature"
+    ],
+    "Tags": [
+      "Human",
+      "Mage"
+    ],
+    "Aspects": [
+      "Order",
+      "Wisdom"
+    ],
+    "Mana": 3,
+    "IsPrimaryShrine": false,
+    "IsLegendary": true,
+    "AI": true,
+    "DeckSortOrder": 102,
+    "Type": "Legendary Creature - Human Mage",
+    "Rules": "~ enters the field with 3 Shield Emblems.\nOther creatures you control with a Shield Emblem get +1 ATK/+1 HP.\nWhenever a creature enters the field under your control, you may move a Shield Emblem from ~ onto that creature.",
+    "Power": 2,
+    "Toughness": 2,
+    "Speed": 3,
+    "MaxInDeck": 4,
+    "ReferencedCards": []
+  },
+{
     "Id": 671,
     "Name": "Sunblessed Fields",
     "ShortName": "Sunblessed Fields",
@@ -12378,6 +12596,39 @@ var cards =
     "Power": 0,
     "Toughness": 0,
     "Speed": 0,
+    "MaxInDeck": 4,
+    "ReferencedCards": []
+  },
+{
+    "Id": 721,
+    "Name": "Solidarity",
+    "ShortName": "Solidarity",
+    "Image": "Solidarity",
+    "Edition": "Exp1",
+    "Rarity": "Uncommon",
+    "AddOn": "None",
+    "LevelRequired": "HN",
+    "Types": [
+      "Creature"
+    ],
+    "Tags": [
+      "Faerie",
+      "Mage"
+    ],
+    "Aspects": [
+      "Order",
+      "Nature"
+    ],
+    "Mana": 2,
+    "IsPrimaryShrine": false,
+    "IsLegendary": false,
+    "AI": true,
+    "DeckSortOrder": 156,
+    "Type": "Creature - Faerie Mage",
+    "Rules": "Flying, Lifebound\nWhen ~ attacks, you may pay <Energy:1> to put a Shield Emblem on an attacking creature you control.",
+    "Power": 2,
+    "Toughness": 1,
+    "Speed": 3,
     "MaxInDeck": 4,
     "ReferencedCards": []
   },
@@ -12447,6 +12698,107 @@ var cards =
     "ReferencedCards": []
   },
 {
+    "Id": 736,
+    "Name": "Tower of Antris",
+    "ShortName": "Tower of Antris",
+    "Image": "TowerofAntris",
+    "Edition": "Exp1",
+    "Rarity": "Rare",
+    "AddOn": "None",
+    "LevelRequired": null,
+    "Types": [
+      "Shrine",
+      "Resource"
+    ],
+    "Tags": [
+      "Order",
+      "Rage"
+    ],
+    "Aspects": [
+      "Order",
+      "Rage"
+    ],
+    "Mana": 0,
+    "IsPrimaryShrine": false,
+    "IsLegendary": false,
+    "AI": false,
+    "DeckSortOrder": 2838,
+    "Type": "Shrine Resource - Order Rage",
+    "Rules": "Sacrifice ~: Choose one –\r\n• Convert <Level:H> into <Level:C>.\n• {ButtonText}\n• <Level:HC> - {ButtonText}",
+    "Power": 0,
+    "Toughness": 0,
+    "Speed": 0,
+    "MaxInDeck": 4,
+    "ReferencedCards": []
+  },
+{
+    "Id": 727,
+    "Name": "Antris Aviator",
+    "ShortName": "Antris Aviator",
+    "Image": "AntrisAviator",
+    "Edition": "Exp1",
+    "Rarity": "Common",
+    "AddOn": "None",
+    "LevelRequired": "(HC)",
+    "Types": [
+      "Creature"
+    ],
+    "Tags": [
+      "Human",
+      "Soldier"
+    ],
+    "Aspects": [
+      "Order",
+      "Rage"
+    ],
+    "Mana": 3,
+    "IsPrimaryShrine": false,
+    "IsLegendary": false,
+    "AI": true,
+    "DeckSortOrder": 212,
+    "Type": "Creature - Human Soldier",
+    "Rules": "Flying\nH - Lifebound\nC - Swift",
+    "Power": 2,
+    "Toughness": 2,
+    "Speed": 2,
+    "MaxInDeck": 4,
+    "ReferencedCards": []
+  },
+{
+    "Id": 726,
+    "Name": "Antris Battlemage",
+    "ShortName": "Antris Battlemage",
+    "Image": "AntrisBattlemage",
+    "Edition": "Exp1",
+    "Rarity": "Uncommon",
+    "AddOn": "None",
+    "LevelRequired": "HC",
+    "Types": [
+      "Creature"
+    ],
+    "Tags": [
+      "Human",
+      "Soldier",
+      "Mage"
+    ],
+    "Aspects": [
+      "Order",
+      "Rage"
+    ],
+    "Mana": 2,
+    "IsPrimaryShrine": false,
+    "IsLegendary": false,
+    "AI": true,
+    "DeckSortOrder": 222,
+    "Type": "Creature - Human Soldier Mage",
+    "Rules": "When ~ attacks, it deals 2 damage to a creature or hero.",
+    "Power": 0,
+    "Toughness": 2,
+    "Speed": 3,
+    "MaxInDeck": 4,
+    "ReferencedCards": []
+  },
+{
     "Id": 581,
     "Name": "Angel of Retribution",
     "ShortName": "Angel of Retribution",
@@ -12466,11 +12818,11 @@ var cards =
       "Order",
       "Rage"
     ],
-    "Mana": 2,
+    "Mana": 3,
     "IsPrimaryShrine": false,
     "IsLegendary": false,
     "AI": false,
-    "DeckSortOrder": 222,
+    "DeckSortOrder": 223,
     "Type": "Spell - Angel Invocation",
     "Rules": "Flying, Lifebound\nWhen ~ enters the field, it deals 2 damage to an enemy creature or hero.\nIf you have 10 or less life, at the start of your turn invoke ~.",
     "Power": 0,
@@ -12605,10 +12957,42 @@ var cards =
     "AI": true,
     "DeckSortOrder": 289,
     "Type": "Creature - Human Assassin Priest",
-    "Rules": "When ~ engages in combat, it gets your choice of Lifebound or Deadly until end of turn.\nWhenever ~ gains you life or destroys a creature, the enemy hero loses 2 life.",
+    "Rules": "When ~ engages in combat, it gets your choice of Lifebound or Deadly until end of turn.\nWhenever ~ gains you life and when it destroys a creature, the enemy hero loses 2 life.",
     "Power": 2,
     "Toughness": 3,
     "Speed": 2,
+    "MaxInDeck": 4,
+    "ReferencedCards": []
+  },
+{
+    "Id": 760,
+    "Name": "Indoctrination",
+    "ShortName": "Indoctrination",
+    "Image": "Indoctrination",
+    "Edition": "Exp1",
+    "Rarity": "Uncommon",
+    "AddOn": "None",
+    "LevelRequired": "(HA)(HA)",
+    "Types": [
+      "Spell"
+    ],
+    "Tags": [
+      "Blessing"
+    ],
+    "Aspects": [
+      "Order",
+      "Dominion"
+    ],
+    "Mana": 4,
+    "IsPrimaryShrine": false,
+    "IsLegendary": false,
+    "AI": false,
+    "DeckSortOrder": 290,
+    "Type": "Spell - Blessing",
+    "Rules": "Attach to a creature with ATK 3 or less.\nYou control this creature. It is a 2 ATK/2 HP/2 SP creature with Lifebound and no other powers.\r\nIf this creature would die, remove all status effects and emblems from it, and destroy all ~ cards attached to it instead.",
+    "Power": 0,
+    "Toughness": 0,
+    "Speed": 0,
     "MaxInDeck": 4,
     "ReferencedCards": []
   },
@@ -12679,6 +13063,40 @@ var cards =
     "Speed": 0,
     "MaxInDeck": 4,
     "ReferencedCards": []
+  },
+{
+    "Id": 761,
+    "Name": "Spirit of the Bells",
+    "ShortName": "Spirit of the Bells",
+    "Image": "SpiritoftheBells",
+    "Edition": "Exp1",
+    "Rarity": "Uncommon",
+    "AddOn": "None",
+    "LevelRequired": "(HM)(HM)",
+    "Types": [
+      "Creature"
+    ],
+    "Tags": [
+      "Spirit"
+    ],
+    "Aspects": [
+      "Order",
+      "Corruption"
+    ],
+    "Mana": 1,
+    "IsPrimaryShrine": false,
+    "IsLegendary": false,
+    "AI": true,
+    "DeckSortOrder": 353,
+    "Type": "Creature - Spirit",
+    "Rules": "Flying\nPlay boost - Summon 2 Enchained Souls if you pay <Mana:2>.\nPlay boost - Other Spirits you control get +1 ATK until end of turn if you pay <Mana:2>.",
+    "Power": 0,
+    "Toughness": 1,
+    "Speed": 3,
+    "MaxInDeck": 4,
+    "ReferencedCards": [
+      433
+    ]
   },
 {
     "Id": 538,
@@ -12814,6 +13232,38 @@ var cards =
     "ReferencedCards": []
   },
 {
+    "Id": 730,
+    "Name": "Vis Vitalis",
+    "ShortName": "Vis Vitalis",
+    "Image": "VisVitalis",
+    "Edition": "Exp1",
+    "Rarity": "Common",
+    "AddOn": "None",
+    "LevelRequired": "(WN)",
+    "Types": [
+      "Spell"
+    ],
+    "Tags": [
+      "Action"
+    ],
+    "Aspects": [
+      "Wisdom",
+      "Nature"
+    ],
+    "Mana": 2,
+    "IsPrimaryShrine": false,
+    "IsLegendary": false,
+    "AI": false,
+    "DeckSortOrder": 541,
+    "Type": "Instant Spell - Action",
+    "Rules": "Choose one -\n  • A creature gets +<Energy:1>. Draw a card.\n  • The next time a creature of your choice would die this turn, it remains on the field and restores its full HP instead.",
+    "Power": 0,
+    "Toughness": 0,
+    "Speed": 0,
+    "MaxInDeck": 4,
+    "ReferencedCards": []
+  },
+{
     "Id": 645,
     "Name": "Lifeforce Essence",
     "ShortName": "Lifeforce Essence",
@@ -12843,6 +13293,70 @@ var cards =
     "Power": 0,
     "Toughness": 0,
     "Speed": 0,
+    "MaxInDeck": 4,
+    "ReferencedCards": []
+  },
+{
+    "Id": 723,
+    "Name": "Mimic Egg",
+    "ShortName": "Mimic Egg",
+    "Image": "MimicEgg",
+    "Edition": "Exp1",
+    "Rarity": "Rare",
+    "AddOn": "None",
+    "LevelRequired": "WN",
+    "Types": [
+      "Creature"
+    ],
+    "Tags": [
+      "Egg"
+    ],
+    "Aspects": [
+      "Wisdom",
+      "Nature"
+    ],
+    "Mana": 2,
+    "IsPrimaryShrine": false,
+    "IsLegendary": false,
+    "AI": false,
+    "DeckSortOrder": 552,
+    "Type": "Creature - Egg",
+    "Rules": "Can't attack\nAt the start of your turn +<Energy:1>.\nDiscard a creature card, pay <Mana> and <Energy> equal to that card’s level: Transform ~ into a copy of that card. Draw a card.",
+    "Power": 0,
+    "Toughness": 3,
+    "Speed": 1,
+    "MaxInDeck": 4,
+    "ReferencedCards": []
+  },
+{
+    "Id": 758,
+    "Name": "Perseverance",
+    "ShortName": "Perseverance",
+    "Image": "Perseverance",
+    "Edition": "Exp1",
+    "Rarity": "Common",
+    "AddOn": "None",
+    "LevelRequired": "WN",
+    "Types": [
+      "Creature"
+    ],
+    "Tags": [
+      "Faerie"
+    ],
+    "Aspects": [
+      "Wisdom",
+      "Nature"
+    ],
+    "Mana": 2,
+    "IsPrimaryShrine": false,
+    "IsLegendary": false,
+    "AI": true,
+    "DeckSortOrder": 552,
+    "Type": "Creature - Faerie",
+    "Rules": "Flying\n~ gets +1 HP for each exhausted Faerie you control.\nIf a spell would deal damage to another Faerie you control, you may have ~ take that damage instead.",
+    "Power": 1,
+    "Toughness": 2,
+    "Speed": 2,
     "MaxInDeck": 4,
     "ReferencedCards": []
   },
@@ -12911,6 +13425,40 @@ var cards =
     "ReferencedCards": []
   },
 {
+    "Id": 769,
+    "Name": "Ice Palace",
+    "ShortName": "Ice Palace",
+    "Image": "WisdomRage",
+    "Edition": "Exp1",
+    "Rarity": "Rare",
+    "AddOn": "None",
+    "LevelRequired": null,
+    "Types": [
+      "Shrine",
+      "Resource"
+    ],
+    "Tags": [
+      "Rage",
+      "Wisdom"
+    ],
+    "Aspects": [
+      "Wisdom",
+      "Rage"
+    ],
+    "Mana": 0,
+    "IsPrimaryShrine": false,
+    "IsLegendary": false,
+    "AI": false,
+    "DeckSortOrder": 3234,
+    "Type": "Shrine Resource - Rage Wisdom",
+    "Rules": "Sacrifice ~: Choose one –\r\n• Convert <Level:C> into <Level:W>.\n• {ButtonText}\n• <Level:CW> - {ButtonText}",
+    "Power": 0,
+    "Toughness": 0,
+    "Speed": 0,
+    "MaxInDeck": 4,
+    "ReferencedCards": []
+  },
+{
     "Id": 661,
     "Name": "Winter Scout",
     "ShortName": "Winter Scout",
@@ -12943,6 +13491,40 @@ var cards =
     "ReferencedCards": []
   },
 {
+    "Id": 762,
+    "Name": "Tolutan Axethrower",
+    "ShortName": "Tolutan Axethrower",
+    "Image": "TolutanAxethrower",
+    "Edition": "Exp1",
+    "Rarity": "Uncommon",
+    "AddOn": "None",
+    "LevelRequired": "(WC)(WC)",
+    "Types": [
+      "Creature"
+    ],
+    "Tags": [
+      "Orc",
+      "Warrior",
+      "Mage"
+    ],
+    "Aspects": [
+      "Wisdom",
+      "Rage"
+    ],
+    "Mana": 2,
+    "IsPrimaryShrine": false,
+    "IsLegendary": false,
+    "AI": false,
+    "DeckSortOrder": 618,
+    "Type": "Creature - Orc Warrior Mage",
+    "Rules": "Ranged\nC - 1, T: ~ deals 1 damage to an enemy creature.\nW - When ~ deals damage to a creature, freeze that creature.",
+    "Power": 2,
+    "Toughness": 2,
+    "Speed": 2,
+    "MaxInDeck": 4,
+    "ReferencedCards": []
+  },
+{
     "Id": 654,
     "Name": "Tolutan Raiding Party",
     "ShortName": "Tolutan Raiding Party",
@@ -12968,7 +13550,7 @@ var cards =
     "AI": true,
     "DeckSortOrder": 619,
     "Type": "Creature - Orc Warrior",
-    "Rules": "W - ~ enters the field with a Shield Emblem.\nC - ~ has +1 ATK.",
+    "Rules": "C - ~ has +1 ATK.\nW - ~ enters the field with a Shield Emblem.",
     "Power": 2,
     "Toughness": 3,
     "Speed": 2,
@@ -13137,7 +13719,7 @@ var cards =
     "Type": "Legendary Creature - Seafolk Mage",
     "Rules": "Selina's powers cost <Mana:0> in the turn it enters the field.\n3: Hex up to 3 enemy creatures until the start of your next turn. Use this power only during your turn and only once each turn.\nHexed enemy creatures get -1 ATK/-1 HP.",
     "Power": 3,
-    "Toughness": 4,
+    "Toughness": 3,
     "Speed": 3,
     "MaxInDeck": 4,
     "ReferencedCards": []
@@ -13408,6 +13990,39 @@ var cards =
     "ReferencedCards": []
   },
 {
+    "Id": 759,
+    "Name": "Passion",
+    "ShortName": "Passion",
+    "Image": "Passion",
+    "Edition": "Exp1",
+    "Rarity": "Common",
+    "AddOn": "None",
+    "LevelRequired": "NC",
+    "Types": [
+      "Creature"
+    ],
+    "Tags": [
+      "Faerie",
+      "Mage"
+    ],
+    "Aspects": [
+      "Nature",
+      "Rage"
+    ],
+    "Mana": 3,
+    "IsPrimaryShrine": false,
+    "IsLegendary": false,
+    "AI": false,
+    "DeckSortOrder": 1015,
+    "Type": "Creature - Faerie Mage",
+    "Rules": "Flying, Swift\nWhen ~ attacks, it gets +<Energy:1> for each other attacking Faerie.\n[2]: A creature you control gets +1 ATK until end of turn.",
+    "Power": 2,
+    "Toughness": 2,
+    "Speed": 3,
+    "MaxInDeck": 4,
+    "ReferencedCards": []
+  },
+{
     "Id": 674,
     "Name": "Aurite of the Hunt",
     "ShortName": "Aurite of the Hunt",
@@ -13473,6 +14088,75 @@ var cards =
     "ReferencedCards": []
   },
 {
+    "Id": 735,
+    "Name": "Abandoned Temple",
+    "ShortName": "Abandoned Temple",
+    "Image": "AbandonedTemple",
+    "Edition": "Exp1",
+    "Rarity": "Rare",
+    "AddOn": "None",
+    "LevelRequired": null,
+    "Types": [
+      "Shrine",
+      "Resource"
+    ],
+    "Tags": [
+      "Nature",
+      "Dominion"
+    ],
+    "Aspects": [
+      "Nature",
+      "Dominion"
+    ],
+    "Mana": 0,
+    "IsPrimaryShrine": false,
+    "IsLegendary": false,
+    "AI": false,
+    "DeckSortOrder": 3696,
+    "Type": "Shrine Resource - Nature Dominion",
+    "Rules": "Sacrifice ~: Choose one –\r\n• Convert <Level:N> into <Level:A>.\n• {ButtonText}\n• <Level:NA> - {ButtonText}",
+    "Power": 0,
+    "Toughness": 0,
+    "Speed": 0,
+    "MaxInDeck": 4,
+    "ReferencedCards": []
+  },
+{
+    "Id": 719,
+    "Name": "Elaya of the Full Moon",
+    "ShortName": "Elaya of the Full Moon",
+    "Image": "Elaya",
+    "Edition": "Exp1",
+    "Rarity": "Heroic",
+    "AddOn": "None",
+    "LevelRequired": "NA",
+    "Types": [
+      "Creature"
+    ],
+    "Tags": [
+      "Faerie",
+      "Shaman"
+    ],
+    "Aspects": [
+      "Nature",
+      "Dominion"
+    ],
+    "Mana": 2,
+    "IsPrimaryShrine": false,
+    "IsLegendary": true,
+    "AI": false,
+    "DeckSortOrder": 1080,
+    "Type": "Legendary Creature - Faerie Shaman",
+    "Rules": "Flying\nWhenever you declare an attack, if ~ is attacking, attacking creatures you control get +<Energy:1>.\n[3]: ~ takes its final form.",
+    "Power": 2,
+    "Toughness": 2,
+    "Speed": 3,
+    "MaxInDeck": 4,
+    "ReferencedCards": [
+      720
+    ]
+  },
+{
     "Id": 706,
     "Name": "Poisonous Fungus",
     "ShortName": "Poisonous Fungus",
@@ -13503,6 +14187,140 @@ var cards =
     "Speed": 2,
     "MaxInDeck": 4,
     "ReferencedCards": []
+  },
+{
+    "Id": 763,
+    "Name": "Silent Predator",
+    "ShortName": "Silent Predator",
+    "Image": "SilentPredator",
+    "Edition": "Exp1",
+    "Rarity": "Uncommon",
+    "AddOn": "None",
+    "LevelRequired": "(NA)(NA)",
+    "Types": [
+      "Creature"
+    ],
+    "Tags": [
+      "Beast"
+    ],
+    "Aspects": [
+      "Nature",
+      "Dominion"
+    ],
+    "Mana": 2,
+    "IsPrimaryShrine": false,
+    "IsLegendary": false,
+    "AI": true,
+    "DeckSortOrder": 1080,
+    "Type": "Creature - Beast",
+    "Rules": "When ~ attacks a creature and isn’t blocked, if there are no cards under ~, you may put that creature under it.\nWhen ~ leaves the field, return all cards under it onto the field under their owner’s control.",
+    "Power": 2,
+    "Toughness": 2,
+    "Speed": 3,
+    "MaxInDeck": 4,
+    "ReferencedCards": []
+  },
+{
+    "Id": 724,
+    "Name": "Sprog Frog",
+    "ShortName": "Sprog Frog",
+    "Image": "SprogFrog",
+    "Edition": "Exp1",
+    "Rarity": "Uncommon",
+    "AddOn": "None",
+    "LevelRequired": "(NA)(NA)",
+    "Types": [
+      "Creature"
+    ],
+    "Tags": [
+      "Beast"
+    ],
+    "Aspects": [
+      "Nature",
+      "Dominion"
+    ],
+    "Mana": 2,
+    "IsPrimaryShrine": false,
+    "IsLegendary": false,
+    "AI": false,
+    "DeckSortOrder": 1080,
+    "Type": "Creature - Beast",
+    "Rules": "Reach\n4: Ready ~ and it takes its final form. This power costs <Mana:1> less for each enemy attacking creature.",
+    "Power": 2,
+    "Toughness": 2,
+    "Speed": 3,
+    "MaxInDeck": 4,
+    "ReferencedCards": [
+      725
+    ]
+  },
+{
+    "Id": 767,
+    "Name": "Twilight Meadow",
+    "ShortName": "Twilight Meadow",
+    "Image": "NatureCorruption",
+    "Edition": "Exp1",
+    "Rarity": "Rare",
+    "AddOn": "None",
+    "LevelRequired": null,
+    "Types": [
+      "Shrine",
+      "Resource"
+    ],
+    "Tags": [
+      "Nature",
+      "Corruption"
+    ],
+    "Aspects": [
+      "Nature",
+      "Corruption"
+    ],
+    "Mana": 0,
+    "IsPrimaryShrine": false,
+    "IsLegendary": false,
+    "AI": false,
+    "DeckSortOrder": 3762,
+    "Type": "Shrine Resource - Nature Corruption",
+    "Rules": "Sacrifice ~: Choose one –\r\n• Convert <Level:M> into <Level:N>.\n• {ButtonText}\n• <Level:NM> - {ButtonText}",
+    "Power": 0,
+    "Toughness": 0,
+    "Speed": 0,
+    "MaxInDeck": 4,
+    "ReferencedCards": []
+  },
+{
+    "Id": 765,
+    "Name": "Parasitic Fungus",
+    "ShortName": "Parasitic Fungus",
+    "Image": "ParasiticFungus",
+    "Edition": "Exp1",
+    "Rarity": "Rare",
+    "AddOn": "None",
+    "LevelRequired": "(NM)",
+    "Types": [
+      "Creature"
+    ],
+    "Tags": [
+      "Plant"
+    ],
+    "Aspects": [
+      "Nature",
+      "Corruption"
+    ],
+    "Mana": 2,
+    "IsPrimaryShrine": false,
+    "IsLegendary": false,
+    "AI": true,
+    "DeckSortOrder": 1135,
+    "Type": "Creature - Plant",
+    "Rules": "At the end of your turn, you may put a Might Emblem on another creature without a Might Emblem. If you do, ~ gains +<Energy:1>.\nAt the start of your turn, you may pay <Mana:3> and <Energy:3>. If you do, ~ takes its final form.",
+    "Power": 0,
+    "Toughness": 3,
+    "Speed": 2,
+    "MaxInDeck": 4,
+    "ReferencedCards": [
+      766
+    ]
   },
 {
     "Id": 588,
@@ -13562,7 +14380,7 @@ var cards =
     "AI": true,
     "DeckSortOrder": 1146,
     "Type": "Creature - Crab",
-    "Rules": "When ~ dies, if it has energy, summon a ~ onto the field with 1 less energy.",
+    "Rules": "When ~ enters the field from a graveyard, it loses all energy.\nWhen ~ dies, if it has energy, summon a ~ onto the field with 1 less energy.",
     "Power": 1,
     "Toughness": 2,
     "Speed": 2,
@@ -13604,6 +14422,105 @@ var cards =
     "ReferencedCards": [
       572
     ]
+  },
+{
+    "Id": 722,
+    "Name": "Vengeance",
+    "ShortName": "Vengeance",
+    "Image": "Revenge",
+    "Edition": "Exp1",
+    "Rarity": "Uncommon",
+    "AddOn": "None",
+    "LevelRequired": "1NM",
+    "Types": [
+      "Creature"
+    ],
+    "Tags": [
+      "Faerie",
+      "Mage"
+    ],
+    "Aspects": [
+      "Nature",
+      "Corruption"
+    ],
+    "Mana": 2,
+    "IsPrimaryShrine": false,
+    "IsLegendary": false,
+    "AI": true,
+    "DeckSortOrder": 1157,
+    "Type": "Creature - Faerie Mage",
+    "Rules": "Flying, Deadly\nAt the start of your turn +<Energy:1>.\nWhen ~ attacks, you may play a Faerie card with level 2 or less from your graveyard using ~’s energy to pay its mana cost. That Faerie enters the field exhausted and attacking the enemy hero if able.",
+    "Power": 1,
+    "Toughness": 4,
+    "Speed": 2,
+    "MaxInDeck": 4,
+    "ReferencedCards": []
+  },
+{
+    "Id": 737,
+    "Name": "Distant Outpost",
+    "ShortName": "Distant Outpost",
+    "Image": "DistantOutpost",
+    "Edition": "Exp1",
+    "Rarity": "Rare",
+    "AddOn": "None",
+    "LevelRequired": null,
+    "Types": [
+      "Shrine",
+      "Resource"
+    ],
+    "Tags": [
+      "Rage",
+      "Dominion"
+    ],
+    "Aspects": [
+      "Rage",
+      "Dominion"
+    ],
+    "Mana": 0,
+    "IsPrimaryShrine": false,
+    "IsLegendary": false,
+    "AI": false,
+    "DeckSortOrder": 4092,
+    "Type": "Shrine Resource - Rage Dominion",
+    "Rules": "Sacrifice ~: Choose one –\r\n• Convert <Level:C> into <Level:A>.\n• {ButtonText}\n• <Level:CA> - {ButtonText}",
+    "Power": 0,
+    "Toughness": 0,
+    "Speed": 0,
+    "MaxInDeck": 4,
+    "ReferencedCards": []
+  },
+{
+    "Id": 764,
+    "Name": "Blackmail",
+    "ShortName": "Blackmail",
+    "Image": "Blackmail",
+    "Edition": "Exp1",
+    "Rarity": "Common",
+    "AddOn": "None",
+    "LevelRequired": "(AC)(AC)",
+    "Types": [
+      "Spell"
+    ],
+    "Tags": [
+      "Action"
+    ],
+    "Aspects": [
+      "Rage",
+      "Dominion"
+    ],
+    "Mana": 1,
+    "IsPrimaryShrine": false,
+    "IsLegendary": false,
+    "AI": false,
+    "DeckSortOrder": 1475,
+    "Type": "Spell - Action",
+    "Rules": "The enemy hero reveals his or her hand. Select a card from it. That hero either discards that card or takes 3 damage from ~.",
+    "Power": 0,
+    "Toughness": 0,
+    "Speed": 0,
+    "MaxInDeck": 4,
+    "ReferencedCards": []
   },
 {
     "Id": 589,
@@ -14002,6 +14919,38 @@ var cards =
     "ReferencedCards": []
   },
 {
+    "Id": 734,
+    "Name": "Mortal Danger",
+    "ShortName": "Mortal Danger",
+    "Image": "MortalDanger",
+    "Edition": "Exp1",
+    "Rarity": "Common",
+    "AddOn": "None",
+    "LevelRequired": "AM",
+    "Types": [
+      "Spell"
+    ],
+    "Tags": [
+      "Curse"
+    ],
+    "Aspects": [
+      "Dominion",
+      "Corruption"
+    ],
+    "Mana": 1,
+    "IsPrimaryShrine": false,
+    "IsLegendary": false,
+    "AI": false,
+    "DeckSortOrder": 1937,
+    "Type": "Spell - Curse",
+    "Rules": "When a creature with ATK 3 or more enters the field under your control, you may sacrifice ~ to destroy an enemy creature with ATK 3 or less.",
+    "Power": 0,
+    "Toughness": 0,
+    "Speed": 0,
+    "MaxInDeck": 4,
+    "ReferencedCards": []
+  },
+{
     "Id": 650,
     "Name": "Skatador, Servant of Aamon",
     "ShortName": "Skatador",
@@ -14225,6 +15174,35 @@ var cards =
     "ReferencedCards": []
   },
 {
+    "Id": 731,
+    "Name": "Sprawling Vines",
+    "ShortName": "Sprawling Vines",
+    "Image": "BreakApart",
+    "Edition": "Exp1",
+    "Rarity": "Common",
+    "AddOn": "None",
+    "LevelRequired": "1",
+    "Types": [
+      "Spell"
+    ],
+    "Tags": [
+      "Curse"
+    ],
+    "Aspects": [],
+    "Mana": 1,
+    "IsPrimaryShrine": false,
+    "IsLegendary": false,
+    "AI": false,
+    "DeckSortOrder": 2652,
+    "Type": "Spell - Curse",
+    "Rules": "At the start of your turn +<Energy:1>.\n[2], sacrifice ~: Destroy another artifact or spell.",
+    "Power": 0,
+    "Toughness": 0,
+    "Speed": 0,
+    "MaxInDeck": 4,
+    "ReferencedCards": []
+  },
+{
     "Id": 587,
     "Name": "Arcane Summoning",
     "ShortName": "Arcane Summoning",
@@ -14304,36 +15282,7 @@ var cards =
     "AI": false,
     "DeckSortOrder": 2653,
     "Type": "Spell - Action",
-    "Rules": "Ancient\nChoose a creature with energy you control. This turn, it has \"<Energy:1>: This creature deals 1 damage to another creature\".\nPlay boost - The chosen creature gains <Energy:2> if you pay 2 life.",
-    "Power": 0,
-    "Toughness": 0,
-    "Speed": 0,
-    "MaxInDeck": 4,
-    "ReferencedCards": []
-  },
-{
-    "Id": 584,
-    "Name": "Primal Battle",
-    "ShortName": "Primal Battle",
-    "Image": "LeapAttack",
-    "Edition": "Exp1",
-    "Rarity": "Uncommon",
-    "AddOn": "None",
-    "LevelRequired": "2",
-    "Types": [
-      "Spell"
-    ],
-    "Tags": [
-      "Action"
-    ],
-    "Aspects": [],
-    "Mana": 1,
-    "IsPrimaryShrine": false,
-    "IsLegendary": false,
-    "AI": false,
-    "DeckSortOrder": 2663,
-    "Type": "Spell - Action",
-    "Rules": "Ancient\nChoose an enemy creature and an allied creature. Each of those creatures deals damage equal to its ATK to the other.",
+    "Rules": "Ancient\nChoose a creature with energy you control. This turn, it has \"<Energy:1>: ~ deals 1 damage to another creature\".\nPlay boost - The chosen creature gains <Energy:2> if you pay 2 life.",
     "Power": 0,
     "Toughness": 0,
     "Speed": 0,
@@ -14428,6 +15377,64 @@ var cards =
     "ReferencedCards": []
   },
 {
+    "Id": 584,
+    "Name": "Primal Battle",
+    "ShortName": "Primal Battle",
+    "Image": "LeapAttack",
+    "Edition": "Exp1",
+    "Rarity": "Uncommon",
+    "AddOn": "None",
+    "LevelRequired": "2",
+    "Types": [
+      "Spell"
+    ],
+    "Tags": [
+      "Action"
+    ],
+    "Aspects": [],
+    "Mana": 2,
+    "IsPrimaryShrine": false,
+    "IsLegendary": false,
+    "AI": false,
+    "DeckSortOrder": 2664,
+    "Type": "Spell - Action",
+    "Rules": "Ancient\nChoose an enemy creature and an allied creature. Each of those creatures deals damage equal to its ATK to the other.",
+    "Power": 0,
+    "Toughness": 0,
+    "Speed": 0,
+    "MaxInDeck": 4,
+    "ReferencedCards": []
+  },
+{
+    "Id": 757,
+    "Name": "Statue of Ytix",
+    "ShortName": "Statue of Ytix",
+    "Image": "StatueofYtix",
+    "Edition": "Exp1",
+    "Rarity": "Rare",
+    "AddOn": "None",
+    "LevelRequired": "2",
+    "Types": [
+      "Artifact"
+    ],
+    "Tags": [
+      "Monument"
+    ],
+    "Aspects": [],
+    "Mana": 2,
+    "IsPrimaryShrine": false,
+    "IsLegendary": false,
+    "AI": false,
+    "DeckSortOrder": 2664,
+    "Type": "Artifact - Monument",
+    "Rules": "Ancient\n[1]: Play a Spirit creature that you haven’t played this game yet from your deck as though it were in your hand. Shuffle your deck. At the end of turn, destroy ~.\nUse ~’s powers only outside of combat during your turn.",
+    "Power": 0,
+    "Toughness": 0,
+    "Speed": 0,
+    "MaxInDeck": 4,
+    "ReferencedCards": []
+  },
+{
     "Id": 643,
     "Name": "Twilight Guardian",
     "ShortName": "Twilight Guardian",
@@ -14509,7 +15516,7 @@ var cards =
     "AI": false,
     "DeckSortOrder": 2665,
     "Type": "Legendary Spell - Spirit Invocation",
-    "Rules": "Unstoppable, Ancient\nWhenever a non-Summoned Rage or Nature creature enters the field under your control, +<Energy:1>.\n[4]: Invoke ~ and it deals 2 damage to all enemy creatures.\n[2]: ~ deals 1 damage to a creature or hero.",
+    "Rules": "Unstoppable, Ancient\nWhenever a non-Summoned Rage or Nature creature enters the field under your control, +<Energy:1>.\n[5]: Invoke ~ and it deals 2 damage to all enemy creatures.\n[2]: ~ deals 1 damage to a creature or hero.",
     "Power": 0,
     "Toughness": 0,
     "Speed": 0,
@@ -14533,11 +15540,11 @@ var cards =
       "Spirit"
     ],
     "Aspects": [],
-    "Mana": 3,
+    "Mana": 4,
     "IsPrimaryShrine": false,
     "IsLegendary": true,
     "AI": false,
-    "DeckSortOrder": 2676,
+    "DeckSortOrder": 2677,
     "Type": "Legendary Spell - Invocation Spirit",
     "Rules": "Ancient\nAt the end of your turn, if ~ isn't a creature, you may discard a card to invoke it. Then do one or both:\r\n• If it was a Wisdom card and the enemy hero has more cards in hand than you, draw 2 cards.\r\n• If it was a Dominion card and the enemy hero controls more creatures than you, destroy an enemy creature.",
     "Power": 0,
@@ -14597,9 +15604,9 @@ var cards =
     "AI": true,
     "DeckSortOrder": 2678,
     "Type": "Creature - Elemental",
-    "Rules": "Embody\n~ gets -1 ATK/-1 HP for each card under it.\nWhen ~ enters the field, if it embodied a creature, you may put all other creatures and artifacts with the same mana cost as that creature under ~.",
-    "Power": 6,
-    "Toughness": 6,
+    "Rules": "Embody, Tainted\n~ gets -1 ATK/-1 HP for each card under it.\nWhen ~ enters the field, if it embodied a creature, you may put all other creatures and artifacts with the same mana cost as that creature under ~.",
+    "Power": 5,
+    "Toughness": 5,
     "Speed": 2,
     "MaxInDeck": 4,
     "ReferencedCards": []
